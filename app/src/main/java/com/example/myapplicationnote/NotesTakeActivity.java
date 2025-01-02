@@ -35,10 +35,10 @@ public class NotesTakeActivity extends AppCompatActivity {
 
         notes = new Notes();
         try {
-          notes = (Notes) getIntent().getSerializableExtra("old_notes");
-          titleED.setText(notes.getTitle());
-          notesEd.setText(notes.getNotes());
-          isOldNotes = true;
+            notes = (Notes) getIntent().getSerializableExtra("old_notes");
+            titleED.setText(notes.getTitle());
+            notesEd.setText(notes.getNotes());
+            isOldNotes = true;
         }catch (Exception e){
             e.printStackTrace();
         }

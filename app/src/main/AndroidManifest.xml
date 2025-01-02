@@ -23,21 +23,20 @@
             </intent-filter>
         </activity>
 
-        <!-- Autres activités -->
+        <!-- Déclaration de l'activité Sign-up -->
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true" />
+
+        <!-- Déclaration de l'activité principale de l'application -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <!-- Autres activités (comme NotesTakeActivity) -->
         <activity
             android:name=".NotesTakeActivity"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 </manifest>
-
-
-
